@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:clickable="true"
+    android:id="@+id/song_detail_item_relative"
+    android:background="?attr/selectableItemBackground"
+    >
+
+    <TextView
+        android:id="@+id/song_list_item_number"
+        android:text="1"
+        android:maxLength="3"
+        android:paddingLeft="12dp"
+        android:paddingRight="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/echo6cd668"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <LinearLayout
+
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/song_list_item_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/song_list_item_name"
+            android:text="如果可以这样爱"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/listTextColor"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/song_list_item_artist"
+            android:text="李行亮"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingTop="3dp"
+            android:textSize="12sp"
+            android:layout_marginRight="39dp"
+            android:textColor="@color/echo6cd668"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/song_list_item_pop_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="15dp"
+        android:src="@drawable/pop_menu_icon"
+        />
+</RelativeLayout>

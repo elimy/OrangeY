@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:duration="300"
+        android:fromXDelta="0"
+        android:toXDelta="100%"
+        />
+
+    <!--
+        //间隔时间 单位为毫秒
+        android:duration="300"
+        //起始时x坐标的位置，其他类推
+        android:fromXDelta="0"
+        //加P表示一父view为参照物
+        android:toXDelta="100%p"
+    -->
+</set>

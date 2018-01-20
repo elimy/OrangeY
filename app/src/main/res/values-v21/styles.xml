@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+                <!-- Customize your theme here. -->
+                <item name="colorPrimary">@color/colorPrimary</item>
+                <item name="colorPrimaryDark">@color/colorPrimary</item>
+                <item name="colorAccent">@color/colorPrimary</item>
+                <item name="android:windowBackground">@color/background_material_light_new</item>
+                <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+
+                <!-- ActionBar上Menu的字体颜色 -->
+                <item name="actionMenuTextColor">@color/white</item>
+
+                <!--按钮的颜色-->
+                <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+                <item name="android:navigationBarColor">@color/sweet_dialog_bg_color</item>
+        </style>
+</resources>

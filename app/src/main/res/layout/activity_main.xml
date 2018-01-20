@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--主布局-->
+    <!--
+        CoordinatorLayout是一个super FrameLayout他提供了不需要写动画效果就能实现滚动效果的一种能力
+        比如：让浮动按钮上下滑动显示Snackbar，扩展或者缩小toolbar头部，控制某个view收缩扩展。
+    -->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_root">
+
+        <!--
+            AppBarLayout是继承自LinearLayout实现的一个ViewGroup容器组件，作用是支持了
+         APP Bar的手势滑动操作
+        -->
+
+        <android.support.design.widget.AppBarLayout
+            style="@style/Theme.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <!--顶部导航栏
+               layout_scrollFlags监听IRecyclerView的滚动事件
+               必须至少启用scroll ，enterAlways表示一旦滚动这个view就可见
+
+               app:popupTheme：设置有上角弹出菜单的样式
+            -->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+              <RelativeLayout
+                  android:padding="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+                  <TextView
+                      android:text="首页"
+                      android:textSize="16sp"
+                      android:textColor="@color/white"
+                      android:layout_width="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentLeft="true"
+                      />
+                  <ImageView
+                      android:id="@+id/btn_message"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="10dp"
+                      android:clickable="true"
+                      android:src="@drawable/home_message"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent" />
+              </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+        <com.aspsine.irecyclerview.IRecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:refreshHeaderLayout="@layout/irecyclerview_refresh_header"
+            app:refreshEnabled="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </com.aspsine.irecyclerview.IRecyclerView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--侧滑菜单配置
+        app:headerLayout：配置侧滑抽屉顶部布局
+        app:menu：配置底部菜单
+    -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:headerLayout="@layout/drawer_head_view"
+        app:menu="@menu/drawer_menu"/>
+
+</android.support.v4.widget.DrawerLayout>

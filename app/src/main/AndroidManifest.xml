@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andy.orange">
+
+    <!--网络访问权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--获取网络状态权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--内存读写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="RECEIVE_USER_PRESENT"/>
+
+    <!--允许程序进程不进入休眠状态-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--读取手机状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!--申请修改系统设置权限-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!--注册访问震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!--注册允许程序挂载和移除可移动存储设备权限-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application
+        android:name=".app.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+
+        <!--主界面-->
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.movie.MovieDisplayActivity"/>
+        <activity android:name=".ui.movie.MovieDetailActivity"/>
+        <activity android:name=".ui.movie.MoviePlayActivity"/>
+        <activity android:name=".ui.music.MusicActivity"/>
+        <activity android:name=".ui.music.MusicSongListDetailActivity"/>
+        <activity android:name=".ui.music.PlayingActivity"/>
+        <activity android:name=".ui.music.MusicRankingListDetailActivity"/>
+        <activity android:name=".ui.coder.CoderActivity"/>
+        <activity android:name=".ui.LiveActivity"/>
+        <activity android:name=".ui.BookActivity"/>
+        <activity android:name=".ui.DuanziActivity"/>
+        <activity android:name=".ui.LoginActivity" android:windowSoftInputMode="adjustResize"/>
+
+        <service android:name=".service.MediaPlayService"/>
+        <service android:name=".service.MusicPlayService"/>
+
+        <receiver android:name=".broadcastreceiver.ProgressReceiver">
+            <intent-filter>
+                <action android:name="com.andy.progress"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

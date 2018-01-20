@@ -1,0 +1,33 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item android:id="@+id/hobby"
+        android:title="音乐与电影">
+        <menu>
+            <item android:title="首页" android:id="@+id/menu_home" android:icon="@drawable/menu_index"/>
+            <item android:title="直播" android:id="@+id/menu_live" android:icon="@drawable/menu_live"/>
+            <item android:title="搞笑段子" android:id="@+id/menu_duanzi" android:icon="@drawable/menu_funny"/>
+            <item android:title="书城" android:id="@+id/menu_book" android:icon="@drawable/menu_book"/>
+            <item android:title="电影" android:id="@+id/menu_movie" android:icon="@drawable/menu_film"/>
+            <item android:title="音乐" android:id="@+id/menu_music" android:icon="@drawable/menu_music"/>
+
+        </menu>
+    </item>
+</group>
+<group  android:checkableBehavior="single">
+    <item android:id="@+id/more"
+        android:title="更多">
+        <menu>
+            <item android:title="作者信息" android:id="@+id/menu_info" android:icon="@drawable/menu_coder"/>
+            <item android:id="@+id/menu_about"
+                android:icon="@drawable/menu_copyright"
+                android:title="开源信息"/>
+            <item android:id="@+id/menu_logout"
+                android:icon="@drawable/menu_out"
+                android:title="退出"/>
+        </menu>
+    </item>
+
+</group>
+
+</menu>

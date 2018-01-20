@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/background_material_light_new</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+
+        <!-- ActionBar上Menu的字体颜色 -->
+        <item name="actionMenuTextColor">@color/white</item>
+
+        <item name="android:actionOverflowMenuStyle" tools:targetApi="lollipop">@style/OverflowMenu</item>
+
+        <!--按钮的颜色-->
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+    </style>
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <!-- 设置Toolbar标题字体的大小和颜色 -->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--主页有上角弹出菜单的样式-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:color">@color/white</item>
+    </style>
+
+    <!--Activity动画-->
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+
+        <!--打开新activity的进入效果-->
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <!--打开新activity销毁前的效果-->
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <!--关闭当前activity，进入上一activity的效果-->
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>
+        <!--当前activity关闭的效果-->
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- 默认的style -->
+    <style name="Theme.share.dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

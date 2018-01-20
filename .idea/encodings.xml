@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/build.gradle" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/adapter/MainRecyclerViewAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/anims/AnimationAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/anims/BaseItemAnimator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/anims/LandingAnimator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/anims/ScaleInAnimationAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/anims/ViewHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/api/ApiService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/app/AppApplication.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/base/BaseActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/base/BaseApplication.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/bean/Book.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/bean/Film.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/bean/LoginBean.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/bean/MovieInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/client/BaseApiService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/client/BaseResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/client/IpResult.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/client/RetrofitClient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/client/RxDisposeManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/BookActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/MainActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/model/BookModel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/model/MainModel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/model/impl/BookModelImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/model/impl/MainModelImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/presenter/BookPresenter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/presenter/MainPresenter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/presenter/impl/BookPresenterImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/presenter/impl/MainPresenterImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/view/BookView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/ui/home/view/MainView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/utils/GlideLoader.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/utils/GlideRoundTransformUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/utils/ImageLoaderUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/utils/SettingStatusBar.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/utils/SharedPreferencesUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/widget/ClassicRefreshHeaderView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/widget/StatusBarView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/andy/orange/widget/SuperTextView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build.gradle" charset="UTF-8" />
+  </component>
+</project>

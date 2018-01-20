@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="6dp"
+    android:id="@+id/RLayout_song_list_item">
+
+    <FrameLayout
+        android:id="@+id/frameLayout_list_item"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:src="@mipmap/head_image"
+            android:id="@+id/song_list_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="100"
+                android:drawablePadding="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:id="@+id/song_list_count"
+                android:textColor="@color/whaite_text"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/earphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/song_list_name"
+        android:layout_below="@id/frameLayout_list_item"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="感动心灵的纯音乐"
+        android:textColor="@color/echo6cd668"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.andy.orange"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a','x86', 'x86_64', 'mips', 'mips64'
+        }
+
+/*        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "42a94a33195ec78eae9c25ab", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]*/
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:percent:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    //视图绑定 butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    /*一个炫酷的RecyclerView*/
+    compile 'com.github.Aspsine:IRecyclerView:0.0.5'
+    //引入rxjava
+    compile 'io.reactivex.rxjava2:rxjava:2.0.4'
+    //引入rxandroid
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //引入retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    //引入rxjava适配器，方便rxjava与retrofit的结合
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    //引入json转换器，方便将返回的数据转换为json格式
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //引入okhttp
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    //引入Log拦截器，方便DEBUG模式输出log信息
+    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    /*
+    compile files('libs/commons-httpclient-3.1.jar')
+    compile files('libs/fastjson-1.2.2-sources.jar')
+    compile files('libs/fastjson-1.2.2.jar')
+    compile files('libs/log4j-1.2.17.jar')
+    compile 'com.android.support:percent:25.3.1'
+    compile 'com.google.android:flexbox:0.3.0-alpha2'*/
+    //自动轮播
+    compile 'com.youth.banner:banner:1.4.9'
+    //jsoup解析html
+    compile 'org.jsoup:jsoup:1.9.2'
+    //漂亮的弹框
+    compile 'cn.pedant.sweetalert:library:1.3'
+}
